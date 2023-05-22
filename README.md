@@ -2,9 +2,7 @@
 
 The artifact of SmartState.
 
-## Artifact
-
-In the folder `SmartState`.
+## Usage
 
 ### Build from source
 1. Requirements
@@ -23,15 +21,23 @@ Run SmartState to detect vulnerabilities.
 python vulnerability_detection.py
 ```
 
-And the result is in `demo_profitgain.csv`, containing `contract address, vulnerability location (i.e. vulnerable function), tainted/manipulated state variables`.
-
 ### Build from docker
 
 We also provide a docker image [on docker hub](https://hub.docker.com/r/inplus/smartstate/tags). 
 
-See more in the folder.
+Please pull it first.
 
+```sh
+docker pull inplus/smartstate:v1
+```
 
-## Dataset
+You can run it with the following cmd:
+```sh
+docker run -it --name smartstate inplus/smartstate
 
-In the folder `SmartState-dataset`.
+cd smartstate/
+
+python vulnerability_detection.py
+```
+
+And the result is in `demo_profitgain.csv`, containing `contract address, vulnerability location (i.e. vulnerable function), tainted/manipulated state variables`.
