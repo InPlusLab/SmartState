@@ -41,3 +41,8 @@ python vulnerability_detection.py
 ```
 
 And the result is in `demo_profitgain.csv`, containing `contract address, vulnerability location (i.e. vulnerable function), tainted/manipulated state variables`.
+
+
+## Dataset 
+
+The manual-labeled SRV dataset is in [SmartState-dataset](https://github.com/InPlusLab/SmartState-dataset).
